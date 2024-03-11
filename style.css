@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #5d2e46;
+  --secondary-color: #ad6a6c;
+  --accent-color: #d0ada7;
+  --background-color: #e8d6cb;
+  --text-color: #e8d6cb;
+}
+
+* {
+  cursor: default;
+}
+
+header {
+  background-color: var(--primary-color);
+}
+
+main {
+  background-color: var(--accent-color);
+}
+
+article {
+  background-color: var(--secondary-color);
+}
+
+body {
+  background-color: var(--secondary-color);
+}
+
+/* start */
+body {
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin: 0;
+  color: var(--text-color);
+  background: linear-gradient(var(--primary-color), black);
+  background-attachment: fixed;
+}
+
+.page {
+  border: 5px solid var(--accent-color);
+  border-radius: 18px 18px 20px 20px;
+  width: 450px;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 0 5px 50px var(--background-color);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px 15px 0 0;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0;
+  margin-top: 30px;
+}
+
+input {
+  cursor: text;
+  box-sizing: border-box;
+  width: 100px;
+  height: 60px;
+  font-family: inherit;
+  font-size: 28px;
+  text-align: center;
+  background-color: transparent;
+  color: var(--text-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 8px 25px;
+  margin-top: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  font-family: inherit;
+  font-weight: 600;
+  box-sizing: border-box;
+  width: 100px;
+  height: 30px;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  transition: all ease 0.5s;
+}
+
+button:hover {
+  cursor: pointer;
+  color: var(--secondary-color);
+  background-color: var(--text-color);
+  box-shadow: 0 0 20px var(--text-color);
+}
+
+button:active {
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  scale: 0.9;
+  transition: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: var(--background-color);
+
+  border-radius: 0 0 15px 15px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 12px;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
